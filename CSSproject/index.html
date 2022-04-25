@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "Description" content="Filling the form is compulsory for all">
+    <title>Form_Filling</title>
+</head>
+<!-- in this program i am using instyle style patter , instead of style (inside head) or external style by link -->
+<body>
+    <header>
+        <nav style="background-color: blue; margin:05px;font-size:30px;">
+            <a href="home.html" style=" color: #f2f2f2;">Home</a>
+            <a href="login.html" style="margin-left: 50px; color: #f2f2f2;">Login</a>
+            <a href="logout.html" style="margin-left: 90px; color: #f2f2f2;">Logout</a>
+            <a href="search.html"><input type="text" placeholder="Search"  style="float: right; width: 300px; align-self: center;"  ><button style ="background-color: green;margin-left: 1200px; font-size: 20px; ">Search</button></a>
+        </nav>
+    </header>
+    <main>
+        <style>
+            input[type=text], select {
+              width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            
+            input[type=email] {
+                width: 50%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            
+            input[type=email]:hover {
+              background-color: #f2f2f2;
+            }
+            
+            form {
+              border-radius: 1px;
+              background-color: #f2f2f2;
+              padding: 20px;
+              margin-left: 400px;
+              border: 2px solid black;
+              width: 500px;
+            }
+            </style>
+        <div>
+            <section >
+                <h1 style="margin-left: 400px;">Sign Up</h1>
+                <form  >
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="lname">Email Address:</label><br>
+                    <input type="email" id="ename" name="ename"><br>
+                    <label for="lname">Username:</label><br>
+                    <input type="text" id="uname" name="uname"><br>
+                    <label for="lname">Password:</label><br>
+                    <input type="text" id="pname" name="pname"><br>
+                    <br>
+                    <br>
+                    <input type="checkbox"> I agree with the Terms and Conditions<br>
+                    <button style ="background-color: blue; margin-left: 250px; font-size: 15px;">Sign Up</button>
+                    
+                </form>
+
+
+            </section>
+        </div>
+    </main>
+    <footer >
+        <div style="background-color: gray; float:inline-end ; text-align: center;">
+            @2018-2019
+        </div>
+    </footer>
+    
+</body>
+</html>

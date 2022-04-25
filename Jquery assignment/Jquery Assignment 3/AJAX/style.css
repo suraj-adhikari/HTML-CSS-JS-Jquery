@@ -1,0 +1,17 @@
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.focusedin {
+    background: green;
+      }
+ .focusedout {
+    background: blue;
+      }
+
+p{
+    padding: 20px;
+    margin:20px;
+}

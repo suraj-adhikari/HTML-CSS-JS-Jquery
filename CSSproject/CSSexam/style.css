@@ -1,0 +1,68 @@
+header{
+    background-color: blue;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+p1{
+    color: whitesmoke;
+    font-size: 20px;
+    word-spacing: 1in;
+    margin-left: 1in;
+}
+p2{ margin-left: 0.5in;
+    color: whitesmoke;
+    font-size: 20px;
+}
+p3{ margin-left: 1in;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.first{
+    text-align: center;
+    background-color: blueviolet;
+    margin-bottom: 50px;
+    padding: 30px;
+    color: white;
+
+}
+.one{
+    height: 200px;
+    width: 500px;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 12px;
+   
+    
+}
+
+.third{
+    display: grid;
+    grid-template-columns: repeat(2,800px);
+    
+    
+}
+.fourth{
+    
+    text-align: center;
+    color: blueviolet;
+    display: flex;
+    
+    
+}   
+.three{
+    height: 50px;
+    width: 700px;
+    margin: 10px;
+    border-radius: 12px;
+    border:solid grey;
+    
+}
+
+
+footer{
+    height: 30px;
+    background-color: grey;
+    padding: 20px;
+
+}

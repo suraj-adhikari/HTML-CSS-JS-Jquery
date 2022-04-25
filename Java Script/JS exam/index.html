@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense manager</title>
+    <h1>Simple expense manager Project</h1>
+  </head>
+  <body>
+    <div class="container" id="container">
+        <div class="col s12">
+              <div class="row">
+                <div class="col">
+                    <span class="card-title">Add a new item:</span>
+                        <form action="action_page.php" id="type-form"   method="post">
+                          <label for="type">Type:</label>
+                          <select id="type">
+                            <option value=""></option>
+                            <option value="Card">Cash</option>
+                            <option value="Cash">Online Payment</option>
+                          </select><br>
+                          <span class="error-msg err-type">Cannot be empty</span><br><br>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="name" placeholder=" Where did you spend on?" multiple>
+                          <span class="error-msg err-newfriend">Cannot be empty</span><br><br><br>
+                          <label for="currency">Currency:</label>
+                          <id="currency" name="currency" placeholder="currency">
+                            <select id="currency" name="currency">
+                              <option value="USD">USD</option>
+                              <option value="INR">INR</option>
+                              <option value="Euro">Euro</option>
+                            </select>
+                            <span class="error-msg err-type">Cannot be empty</span>
+                        </form>
+                </div>
+                <div class="col" style="margin-left: 10px;">
+                    <span class="card-title" id="newfriend">Add a Friend <img src="PLUS ICON.jfif" height="20px" width="20px" style="background-color: green;"></span>
+                        <form action="action_page.php" id="add-form"  method="post">
+                          <label for="add-friend">Add Friend:</label>
+                          <input type="text" id="add-friend" name="add-friend" onsubmit="Validform()" multiple><span class="error-msg err-newfriend">Cannot be empty</span><br><br><br>
+                          <label for="date">Date:</label>
+                          <input type="date" id="date" name="date"value="submit"><span class="error-msg err-newfriend">Cannot be empty</span><br><br><br>
+                          <label for="amount">Amount:</label>
+                          <input type="number" id="amount" name="amount" value=" How much"><span class="error-msg err-newfriend">Cannot be empty</span><br><br><br>
+                          <div class="col-75">
+                          </div> 
+                        </form>
+                </div>
+            </div>
+        </div>
+        <div class="button" id="button" style="text-align: center;">
+          <button type="button" class="btn btn-primary" style="text-align: center;">Add a new expense</button>
+        </div>
+    </div>
+    
+      <section class="content">
+        <table class="table result" id='myTable'>
+            <thead>
+                <tr style="background-color:#d2d6dd;">
+                    <th colspan="4">Filter by Friend:
+                        <select id="createfriend2" onchange="filternameFunction()">
+                        </select>
+                    </th>
+                    <th colspan="4">Currency:
+                        <select id="currency2" onchange="filtercurrencyFunction()">
+                        <option value="USD">USD($)</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr style="background-color:#f5f7fa; padding: 2px;">
+                    <th>type</th>
+                    <th>name</th>
+                    <th>Friends</th>
+                    <th>date</th>
+                    <th>amount</th>
+                    <th>edit</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+                <tr id="if-empty">
+                    <td colspan="8" style="text-align: center;">Your added items will show up here!</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+      </div>
+
+    <script src="app.js"></script>
+    <scriptcontentEditable src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+  </body>
+</html>

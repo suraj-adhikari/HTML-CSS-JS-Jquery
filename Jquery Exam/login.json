@@ -1,0 +1,40 @@
+[
+    {
+        "id":"1",
+        "firstname":"John",
+        "lastname":"Doe",
+        "email":"j@gmail.com",
+        "mobile":"98269123465",
+        "loginName":"john123",
+        "password":"john@123",
+        "status":"active",
+        "role":"admin"
+    },
+    {
+        "id":"2",
+        "firstname":"Ross",
+        "lastname":"Taylor",
+        "email":"r@gmail.com",
+        "mobile":"98269123466",
+        "loginName":"ross123",
+        "password":"ross@123",
+        "status":"active",
+        "role":"user"
+    },
+    {
+        "id":"3",
+        "firstname":"Virat",
+        "lastname":"Kohli",
+        "email":"v@gmail.com",
+        "mobile":"98269123467",
+        "loginName":"virat123",
+        "password":"virat@123",
+        "status":"active",
+        "role":"user"
+    }
+]
+
+
+
+
+
