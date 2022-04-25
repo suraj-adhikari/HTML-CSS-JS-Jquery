@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0 ;
+    font-family: inherit;
+    
+}
+/* outer box */
+.col{
+    height:100%;
+    width:100%;
+    border: 5px solid silver;
+    padding: 10px;
+    margin:10px
+
+}
+
+/* inner form box */
+.form-box{
+    width:400px;
+    height :480px;
+    position: relative;
+    margin: 4% auto;
+    background: whitesmoke;
+    padding: 20px;
+    overflow: hidden;
+ 
+    
+
+}
+ .button-box{
+     width: 420px;
+     margin:35px auto;
+     position: relative;
+
+ }
+
+#btnLogin{
+    padding: 10px 200px;
+    cursor: pointer;
+    text-align: center;
+    
+
+}
+#btnCreate{
+    padding: 10px 150px;
+    cursor: pointer;
+    text-align: centre;
+    
+
+}
+.social-icons{
+    margin: 3px auto;
+    text-align: centre;
+    
+}
+.button{
+    background: blue;
+}
